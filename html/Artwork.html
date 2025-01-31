@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo-Fi Web Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&family=Shrikhand&display=swap');
+        
+        body {
+            background-color: #fef2dc;
+            margin: 0;
+            font-family: 'League Spartan', sans-serif;
+            text-align: center;
+        }
+        
+         .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 40px;    
+        }
+     
+        .logo img {
+            width: 100px; /* Adjust logo size */
+            height: auto;
+            cursor: pointer;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 50px;
+			padding-right: 550px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #00a38d;
+            font-size: 40px;
+            font-weight: 700;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: #ea7d9c;
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s ease-in-out;
+        }
+        
+        .nav-links a:hover {
+            color: #ea7d9c;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+     
+        
+        .navbar, .header-image, .header-text, .arrow, .box {
+            animation: fadeIn 1s ease-in-out;
+        }
+    .sidebar {
+            width: 30%;
+            padding: 20px;
+        }
+        .sidebar h1 {
+            font-size: 64px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .sidebar h2 {
+            font-size: 40px;
+            margin: 0;
+        }
+        .highlight {
+            font-size: 48px;
+            font-weight: bold;
+            color: #F572A0;
+            font-style: italic;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #007D69;
+            color: #007D69;
+            font-weight: bold;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .social-icons {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .social-icons a {
+            margin: 10px;
+            text-decoration: none;
+            font-size: 24px;
+            color: #007D69;
+        }
+        .image-section {
+            flex-grow: 1;
+            text-align: center;
+        }
+        .image-section img {
+            width: 80%;
+            border-radius: 20px;
+        }
+        .box {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .box-content div {
+            margin: 10px 0;
+        }
+        .box-content a {
+            text-decoration: none;
+            color: #007D69;
+            font-weight: bold;
+        }
+        .video-box {
+            background: #00a38d;
+            width: 300px;
+            height: 200px;
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+        }
+        .video-box video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="../../Remove background project (16).png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="About Me.html">About me</a>
+            <a href="Artwork.html">Artwork</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+    <div class="social-icons">
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+        <a href="#"></a>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h1>hello</h1>
+            <h2>i'm <span class="highlight">mimi</span></h2>
+            <a href="#" class="button">designer</a>
+        </div>
+        <div class="image-section">
+            <img src="profile.jpg" alt="Mimi's Photo">
+        </div>
+    </div>
+    <div class="box">
+        <div class="box-content">
+            <div><a href="mailto:mimi@example.com">E-mail me</a></div>
+            <div><a href="tel:+123456789">Call me</a></div>
+            <div><a href="#chat">Chat me</a></div>
+            <div><a href="#work">My work</a></div>
+        </div>
+    </div>
+    <div class="video-box">
+        <video autoplay loop muted>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+   
+</body>
+</html>
